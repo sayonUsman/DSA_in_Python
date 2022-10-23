@@ -8,13 +8,13 @@ class LinkedList:
 	def __init__(self):
 		self.__head = None
 
-#FUNCTION START		
+	#FUNCTION START		
 	def insert_at_beginning(self, data):
 		node = Node(data = data, link = self.__head)
 		self.__head = node
-#FUNCTION END
+	#FUNCTION END
 
-#FUNCTION START		
+	#FUNCTION START		
 	def insert_at_end(self, data):
 		node = Node(data = data, link = None)
 		
@@ -28,9 +28,9 @@ class LinkedList:
 				temp_node = temp_node.link
 				
 			temp_node.link = node
-#FUNCTION END
+	#FUNCTION END
 
-#FUNCTION START		
+	#FUNCTION START		
 	def remove(self, index):
 		if self.__head is None:
 			print("The Linked List is Empty.\n")
@@ -55,9 +55,9 @@ class LinkedList:
 			temp_node.link = None
 			
 		return True				
-#FUNCTION END
+	#FUNCTION END
 
-#FUNCTION START						
+	#FUNCTION START						
 	def print(self):	
 		if self.__head is None:
 			print("The Linked List is Empty.\n")
@@ -74,9 +74,9 @@ class LinkedList:
 					print(f'{temp_node.data}', end = " -> ")
 					
 				temp_node = temp_node.link
-#FUNCTION END
+	#FUNCTION END
 
-#FUNCTION START			
+	#FUNCTION START			
 	def length(self):
 		if self.__head is None:
 			return 0
@@ -90,7 +90,7 @@ class LinkedList:
 			temp_node = temp_node.link
 							
 		return count
-#FUNCTION END
+	#FUNCTION END
 				
 				
 if __name__ == '__main__':
